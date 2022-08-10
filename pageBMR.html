@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pageBMR.css">
+    <title>BMR_V3</title>
+</head>
+<body>
+    <div class="container">
+    <div class="box">
+            <h1>BMR Calculator</h1>
+            <div class="imgs">
+                <div class="hom">
+                <img src="images/homme-daffaire.png" alt="image" title="image" id="imghomme" class="imgsex">
+              <div class="rad1"><input type="radio" name="sex" onclick="radio()">  <span id="spnHom">homme</span></div>
+                </div>
+                <div class="fem">
+                    <img src="images/femme-daffaires.png" alt="image" title="image" id="imgfemme" class="imgsex">
+                    <div class="rad2"><input type="radio" name="sex" onclick="radio()">  <span id="spnFem">femme</span></div>
+                </div>
+            </div>
+        <div class="content">
+
+        <div class="inpts">
+            <label for="ip1">votre age</label>
+            <input type="text" id="age">
+        </div>
+        <div class="inpts">
+            <label for="ip2">votre longueur</label>
+            <input type="text" id="longueur">
+        </div>
+        <div class="inpts">
+            <label for="ip3">votre Poids</label>
+            <input type="text" id="Poids">
+        </div>
+            <select id="slc" class="inpts">
+                <option value="Veuillez sélectionner" >Veuillez sélectionner</option>
+                <option value="beaucoup assis (peu ou pas d'activité)">beaucoup assis (peu ou pas d'activité)</option>
+                <option value="Activité légère (exercice léger 1 à 3 jours par semaine)">Activité légère (exercice léger 1 à 3 jours par semaine)</option>
+                <option value="Activité modérée (exercice modéré/sports 3 à 5 jours par semaine)">Activité modérée (exercice modéré/sports 3 à 5 jours par semaine)</option>
+                 <option value="Activité élevée (exercice intense/sports 6-7 jours par semaine)">Activité élevée (exercice intense/sports 6-7 jours par semaine)</option>
+                <option value="Super activité (entraînements très durs/double entraînement)">Super activité (entraînements très durs/double entraînement)</option>
+            </select>
+
+        <button type="button" id="btn">calculer</button>
+        <div class="rslt">
+            <div id="rsl">00.00 Kcal</div>
+            <div id="msgErr">Erreur</div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="pageBMR.js"></script>
+</body>
+</html>
